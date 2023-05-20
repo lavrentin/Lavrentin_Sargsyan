@@ -1,0 +1,108 @@
+.editing {
+  display: flex;
+  justify-content: center;
+  margin: 10%;
+
+  .editCart {
+    width: 662px;
+    height: 328px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #ffffff;
+    border-radius: 8px;
+    justify-content: space-around;
+    margin-top: 35px;
+
+    .handleBack {
+      width: 122px;
+      height: 48px;
+      background: #ffffff;
+      border: 1px solid #f2f2f7;
+      border-radius: 4px;
+      cursor: pointer;
+      margin: 0 20px 10px 0;
+      font-family: sans-serif;
+      font-weight: bolder;
+
+      span {
+        color: blue;
+        font-family: sans-serif;
+        font-size: 14px;
+      }
+    }
+
+    .title {
+      font-family: sans-serif;
+      font-weight: bolder;
+    }
+
+    .editForm {
+      width: 614px;
+      height: 208px;
+      background: #f2f2f7;
+      border-radius: 8px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      overflow: auto;
+
+      .editListBlock {
+        width: 582px;
+        height: 48px;
+        background: #ffffff;
+        border-radius: 4px;
+        border: none;
+        display: flex;
+        align-items: center;
+        margin: 7px;
+
+        &:hover {
+          border: solid 1px #3c80e6;
+        }
+
+        .click {
+          display: flex;
+          align-items: center;
+          text-align: center;
+          color: #3a85f7;
+          width: 65px;
+          height: 24px;
+          border: none;
+          cursor: pointer;
+          background: white;
+        }
+
+        .HandleEdit {
+          color: blue;
+        }
+
+        .HandleDelete {
+          color: red;
+        }
+
+        .HandleCancel {
+          color: gray;
+        }
+
+        .inputChange {
+          height: 24px;
+          border: none;
+          width: 445px;
+          padding: 5px;
+          outline: none;
+        }
+
+        .greenCheckbox {
+          margin: 15px;
+          height: 24px;
+          cursor: pointer;
+        }
+
+        .greenCheckbox:checked {
+          accent-color: green;
+        }
+      }
+    }
+  }
+}
